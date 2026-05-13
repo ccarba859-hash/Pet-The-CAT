@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link href="style.css" rel="stylesheet" />
+    <script defer src="script.js"></script>
+    <style>
+      .gif-container {
+        width: 700px;
+        height: 700px;
+        align-self: center;
+        margin: 500px;
+        margin-top: 200px;
+        /* background-image: url("CAT.PNG.png"); */
+      }
+
+      /* .gif-container:hover {
+      width:500px;
+        height:500px;
+  background-image: url('PETCAT.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+    </style>
+  </head>
+  <body>
+    <h1>PET THE CAT</h1>
+    <img src="CAT.PNG" alt="cat" id="gif" class="gif-container" />
+
+    <script>
+      let image = document.getElementById("gif");
+      image.addEventListener("mouseover", function () {
+        image.src = "PETCAT.gif";
+      });
+      image.addEventListener("mouseleave", function () {
+        image.src = "CAT.png";
+      });
+    </script>
+  </body>
+</html>
